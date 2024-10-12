@@ -1,12 +1,13 @@
 package com.pam.activity1_0139
 
 // Conditional Expression
-// Conditional expression adalah ekspresi yang mengembalikan nilai bersarkan kondisi tertentu
+// Conditional expression adalah ekspresi yang mengembalikan nilai berdasarkan kondisi tertentu
 // Conditional expression menggunakan if-else, when, dan try-catch
-fun ConditionalStatement() {
+
+fun conditionalStatement() {
     println("=== Conditional Expression ===")
 
-// If-Else
+    // If-Else
     val number = 10
     if (number > 0) {
         println("Positive Number")
@@ -14,7 +15,7 @@ fun ConditionalStatement() {
         println("Negative Number")
     }
 
-// When
+    // When
     val day = 1
     when (day) {
         1 -> println("Sunday")
@@ -27,8 +28,8 @@ fun ConditionalStatement() {
         else -> println("Invalid Day")
     }
 
-// Try-Catch
-    val value ="10"
+    // Try-Catch
+    val value = "10"
     try {
         val result = value.toInt()
         println("Result: $result")
@@ -37,28 +38,37 @@ fun ConditionalStatement() {
     }
 }
 
-fun Perulangan() {
+fun perulangan() {
     println()
-    print("=== Perulangan ===")
+    println("=== Perulangan ===")
 
+    // For loop dengan range
     for (i in 1..5) {
         println("Perulangan ke-$i")
     }
 
+    // For loop dengan list
+    val cars = listOf("BMW", "Toyota", "Honda", "Audi")
+    for (car in cars) {
+        println("Car type: $car")
+    }
+
+    // While loop
     var x = 1
     while (x <= 5) {
         println("Perulangan ke-$x")
         x++
     }
 
+    // Do-while loop
     var y = 1
     do {
         println("Perulangan ke-$y")
         y++
-    } while (y<= 5)
+    } while (y <= 5)
 }
 
 fun main() {
-    ConditionalStatement()
-    Perulangan()
+    conditionalStatement()
+    perulangan()
 }
