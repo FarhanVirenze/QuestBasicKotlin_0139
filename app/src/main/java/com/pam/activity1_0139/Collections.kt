@@ -8,7 +8,7 @@ package com.pam.activity1_0139
 
 fun ContohList() {
     println("=== List ===")
-    // :ist Read-Only
+    // List Read-Only
     val readOnlyAbjad = listOf("A", "B", "C")
     println(readOnlyAbjad)
 
@@ -89,7 +89,11 @@ fun ContohMap() {
     shape.remove("Circle")
     println(shape)
 
-// Mengubah data di dalam Map Mutable
+// Menggunakan data ke dalam Map Mutable
+    shape["Square"] = 5
+    println(shape)
+
+// Map Read-Only
     val shapesLocked: Map<String, Int> = shape
     println(shapesLocked)
 }
@@ -99,3 +103,6 @@ fun main() {
     ContohSet()
     ContohMap()
 }
+
+
+
