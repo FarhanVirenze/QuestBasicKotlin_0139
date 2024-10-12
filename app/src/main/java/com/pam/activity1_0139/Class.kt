@@ -1,18 +1,23 @@
 package com.pam.activity1_0139
 
-class Motor()
+// Class Motor tanpa properti
+class Motor {
+}
 
 class Contact(val id: Int, var email: String)
 
 fun main() {
-val contact = Contact(1, "mary@gmail.com")
-
-// Prints the value of the property: email
-println(contact.email)
-
-// Updates the value of the property: email
-contact.email = "jane@gmail.com"
+    val contact = Contact(1, "mary@gmail.com")
 
 // Prints the new value of the property: email
-println(contact.email)
+    println(contact.email)
+
+    // Updates the value of the property: email
+    contact.email = "jane@gmail.com"
+
+    // Prints the value of the property: email
+    println(contact.email)
 }
+
+
+
