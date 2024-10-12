@@ -20,19 +20,17 @@ fun withNamedArgument(name: String, age: Int) {
 }
 
 // default parameter value
-// default parameter value merupakan cara untuk Memberikan nilai default pada parameter fungsi
-fun withDefaultParameter(name: String = " Indra", age: Int) {
+// default parameter value merupakan cara untuk memberikan nilai default pada parameter fungsi
+fun withDefaultParameter(name: String = "Indra", age: Int) {
     println()
     println("== withDefaultParameter ==")
     println("Hello, $name! You are $age years old.")
 }
 
-// Print the result if you want
 // Return the result
 fun withReturn(panjang: Int, lebar: Int): Int {
-    val hasil = panjang * lebar
-    println(hasil)
-    return hasil
+    // Mengembalikan hasil tanpa println
+    return panjang * lebar
 }
 
 fun main() {
@@ -40,4 +38,8 @@ fun main() {
     withParameter("John")
     withNamedArgument(name = "John", age = 30)
     withDefaultParameter(age = 25)
+
+    // Mencetak hasil dari withReturn
+    val result = withReturn(10, 5)
+    println("Result of withReturn: $result")
 }
